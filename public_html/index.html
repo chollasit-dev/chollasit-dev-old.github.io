@@ -6,28 +6,40 @@
     <meta name="description" content="Learn more about me through my portfolio website.">
     <meta name="author" content="Devcrud">
     <title>Chollasit's Portfolio | Landing Page About me</title>
-    <!-- font icons -->
+    <!-- Font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- TODO: Bootstrap + JohnDoe main styles -->
+    <!-- Bootstrap + JohnDoe main styles -->
 	    <link rel="stylesheet" href="assets/css/johndoe.css">
 </head>
 
+<!-- TODO: Study
+    data-spy, data-target, data-offset, aria-hedden
+    Double tag: <ul>, <li>, <a>, <i> 
+-->
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
+    <!-- ? Post-It link btn to "components.html" when scroll down.-->
+    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600">
+        <!-- TODO -->
+        <i class="ti-shift-left-alt"></i> Components
+    </a>
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://web.facebook.com/profile.php?id=100008299267075"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <!-- Unused
+                    <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li> 
+                -->
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/chollasit-dev"><i class="ti-github" aria-hidden="true"></i></a></li>
             </ul>  
             <div class="header-content">
                 <h4 class="header-subtitle" >Hello, I am</h4>
-                <h1 class="header-title">John Doe</h1>
-                <h6 class="header-mono" >Frond end Designer | Developer</h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+                <h1 class="header-title">Chollasit</h1>
+                <h1 class="header-title"> Vibulsirikul</h1>
+                <h6 class="header-mono">Web App Developer | Mobile App Developer</h6>
+                <!-- * "btn-primary" color changed -->
+                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>View Resume</button>
             </div>
         </div>
     </header>
