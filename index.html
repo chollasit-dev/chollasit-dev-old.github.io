@@ -40,7 +40,7 @@
                 <h1 class="header-title"> Vibulsirikul</h1>
                 <h6 class="header-mono">Web App Developer | Mobile App Developer</h6>
                 <!-- * "btn-primary" color changed -->
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>View Resume</button>
+                <button class="btn btn-primary btn-rounded" onclick="downloadFileResume()"><i class="ti-printer pr-2"></i>View Resume</button>
             </div>
         </div>
     </header>
@@ -91,7 +91,7 @@
                 <span class="line mb-5"></span>
                 <h5 class="mb-3">4th Fourth-year student of Multimedia Technology</h5>
                 <p class="mt-20">Currently studying coding and multimedia. With my current technical skills and experience along with my distress tolerance capability, detail-oriented mindset, and adaptive communication skills, I'm ready to utilize my skills and experience to develop attractive web application and mobile application. Eager to develop my skills to acquire in-depth experience in my profession and improve myself to be more productive in this line of work.</p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My Transcript</button>
+                <button class="btn btn-outline-danger" onclick="downloadFileTranscript()"><i class="icon-down-circled2 "></i>Download My Transcript</button>
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
@@ -817,3 +817,11 @@
 
 </body>
 </html>
+<script>
+    function downloadFileResume() {
+        window.open("https://drive.google.com/file/d/1Qd7rD_mE-vSSwfXVqk4S_HhX1TgBhPmV/view?usp=drive_link");
+    }
+    function downloadFileTranscript() {
+        window.open("https://drive.google.com/file/d/1AWpaNapEfsn5JbS4_m9WwvwBDgmQw64s/view?usp=drive_link");
+    }
+</script>
