@@ -11773,10 +11773,11 @@ pre .code {
 
 .social-icons .social-link {
   font-size: 18px;
+  color: #0c356a;
 }
 
 .social-icons .social-link:hover {
-  color: #f85c70;
+  color: #1450d9;
 }
 
 .navbar {
