@@ -11202,12 +11202,12 @@ a.text-warning:focus {
 }
 
 .text-danger {
-  color: #f85c70 !important;
+  color: #0c356a !important;
 }
 
 a.text-danger:hover,
 a.text-danger:focus {
-  color: #f51330 !important;
+  color: #1450d9 !important;
 }
 
 .text-light {
