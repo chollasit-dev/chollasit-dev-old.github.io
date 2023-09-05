@@ -1,158 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Learn more about me through my portfolio website.">
-    <meta name="author" content="Devcrud">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Learn more about me through my portfolio website."
+    />
+    <meta name="author" content="Devcrud" />
     <title>Chollasit's Portfolio | Website About me</title>
     <!-- Font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css"
+    />
     <!-- Font icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Bootstrap + JohnDoe main styles -->
-	    <link rel="stylesheet" href="assets/css/johndoe.css">
-</head>
+    <link rel="stylesheet" href="assets/css/johndoe.css" />
+  </head>
 
-<!-- TODO: Study
+  <!-- TODO: Study
     data-spy, data-target, data-offset, aria-hedden
     Double tag: <ul>, <li>, <a>, <i>
 -->
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <!-- ? Post-It link btn to "components.html" when scroll down.-->
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600">
-        <!-- TODO: Disable Checker -->
-        <i class="ti-shift-left-alt"></i> Components
+    <a
+      href="components.html"
+      class="btn btn-primary btn-component"
+      data-spy="affix"
+      data-offset-top="600"
+    >
+      <!-- TODO: Disable Checker -->
+      <i class="ti-shift-left-alt"></i> Components
     </a>
     <header class="header">
-        <div class="container">
-            <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="https://web.facebook.com/profile.php?id=100008299267075"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                <!-- Unused
+      <div class="container">
+        <ul class="social-icons pt-3">
+          <li class="social-item">
+            <a
+              class="social-link text-light"
+              href="https://web.facebook.com/profile.php?id=100008299267075"
+              ><i class="ti-facebook" aria-hidden="true"></i
+            ></a>
+          </li>
+          <!-- Unused
                     <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
                     <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
                     <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
                  -->
 
-                <li class="social-item"><a class="social-link text-light" href="https://github.com/chollasit-dev"><i class="ti-github" aria-hidden="true"></i></a></li>
-            </ul>
-            <div class="header-content">
-                <h4 class="header-subtitle" >Hello, I am</h4>
-                <h1 class="header-title">Chollasit</h1>
-                <h1 class="header-title"> Vibulsirikul</h1>
-                <h6 class="header-mono">Web App Developer | Mobile App Developer</h6>
-                <!-- * "btn-primary" color changed -->
-                <button class="btn btn-primary btn-rounded" onclick="downloadFileResume()"><i class="ti-printer pr-2"></i>View Resume</button>
-            </div>
+          <li class="social-item">
+            <a
+              class="social-link text-light"
+              href="https://github.com/chollasit-dev"
+              ><i class="ti-github" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="header-content">
+          <h4 class="header-subtitle">Hello, I am</h4>
+          <h1 class="header-title">Chollasit</h1>
+          <h1 class="header-title">Vibulsirikul</h1>
+          <h6 class="header-mono">Web App Developer | Mobile App Developer</h6>
+          <!-- * "btn-primary" color changed -->
+          <button
+            class="btn btn-primary btn-rounded"
+            onclick="downloadFileResume()"
+          >
+            <i class="ti-printer pr-2"></i>View Resume
+          </button>
         </div>
+      </div>
     </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-white"
+      data-spy="affix"
+      data-offset-top="510"
+    >
+      <div class="container">
         <!-- TODO: Study
             data-toggle, data-toggle, data-target, aria-controls, aria-expanded, aria-label
             Double tag: <nav>, <span>
             Single tag: <hr>
         -->
-            <!-- Navbar menu button -->
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About me</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">Chollasit Vibulsirikul</h5>
-                        <div class="brand-subtitle">Web App | Mobile App Developer</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#activity" class="nav-link">Activities</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- Navbar menu button -->
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse mt-sm-20 navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About me</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav brand">
+            <img src="assets/imgs/avatar.jpg" alt="" class="brand-img" />
+            <li class="brand-txt">
+              <h5 class="brand-title">Chollasit Vibulsirikul</h5>
+              <div class="brand-subtitle">Web App | Mobile App Developer</div>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#activity" class="nav-link">Activities</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- About me section -->
     <div class="container-fluid">
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">4th Fourth-year student of Multimedia Technology</h5>
-                <p class="mt-20">Currently studying coding and multimedia. With my current technical skills and experience along with my distress tolerance capability, detail-oriented mindset, and adaptive communication skills, I'm ready to utilize my skills and experience to develop attractive web application and mobile application. Eager to develop my skills to acquire in-depth experience in my profession and improve myself to be more productive in this line of work.</p>
-                <button class="btn btn-outline-danger" onclick="downloadFileTranscript()"><i class="icon-down-circled2 "></i>Download My Transcript</button>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 2002-09-23</li>
-                    <li><span>Email</span> : vi.chollasit_st@tni.ac.th</li>
-                    <li><span>Phone</span> : + (66) 6-4814-4676</li>
-                    <li><span>LINE ID</span> : zetatick_chin </li>
-                    <li><span>Address</span> :  70/128, 01 Kanchanaphisek 7 alley, Khannayao District, Bangkok 10230</li>
-                </ul>
-                <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="https://web.facebook.com/profile.php?id=100008299267075"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                    <!-- Unused
+      <div id="about" class="row about-section">
+        <div class="col-lg-4 about-card">
+          <h3 class="font-weight-light">Who am I ?</h3>
+          <span class="line mb-5"></span>
+          <h5 class="mb-3">4th Fourth-year student of Multimedia Technology</h5>
+          <p class="mt-20">
+            Currently studying coding and multimedia. With my current technical
+            skills and experience along with my distress tolerance capability,
+            detail-oriented mindset, and adaptive communication skills, I'm
+            ready to utilize my skills and experience to develop attractive web
+            application and mobile application. Eager to develop my skills to
+            acquire in-depth experience in my profession and improve myself to
+            be more productive in this line of work.
+          </p>
+          <button
+            class="btn btn-outline-danger"
+            onclick="downloadFileTranscript()"
+          >
+            <i class="icon-down-circled2"></i>Download My Transcript
+          </button>
+        </div>
+        <div class="col-lg-4 about-card">
+          <h3 class="font-weight-light">Personal Info</h3>
+          <span class="line mb-5"></span>
+          <ul class="mt40 info list-unstyled">
+            <li><span>Birthdate</span> : 2002-09-23</li>
+            <li><span>Email</span> : vi.chollasit_st@tni.ac.th</li>
+            <li><span>Phone</span> : + (66) 6-4814-4676</li>
+            <li><span>LINE ID</span> : zetatick_chin</li>
+            <li>
+              <span>Address</span> : 70/128, 01 Kanchanaphisek 7 alley,
+              Khannayao District, Bangkok 10230
+            </li>
+          </ul>
+          <ul class="social-icons pt-3">
+            <li class="social-item">
+              <a
+                class="social-link"
+                href="https://web.facebook.com/profile.php?id=100008299267075"
+                ><i class="ti-facebook" aria-hidden="true"></i
+              ></a>
+            </li>
+            <!-- Unused
                         <li class="social-item"><a class="social-link" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
                         <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
                         <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
                     -->
-                    <li class="social-item"><a class="social-link" href="https://github.com/chollasit-dev"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-
-            <!-- TODO: Fix Icons -->
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">My Skills</h3>
-                <span class="line mb-5"></span>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Coding</h6>
-                        <p class="subtitle">C#, .NET MAUI, Java, HTML, CSS, Javascript, Bootstrap, Express.js (for Node.js)</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Tools and Programs</h6>
-                        <p class="subtitle">Visual Studio Code, GitHub, Android Studio, Postman, MongoDB</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Others</h6>
-                        <p class="subtitle">Illustrator, After Effects, Maya, Unity</p>
-                        <hr>
-                    </div>
-                </div>
-            </div>
+            <li class="social-item">
+              <a class="social-link" href="https://github.com/chollasit-dev"
+                ><i class="ti-github" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
         </div>
+
+        <!-- TODO: Fix Icons -->
+        <div class="col-lg-4 about-card">
+          <h3 class="font-weight-light">My Skills</h3>
+          <span class="line mb-5"></span>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i class="ti-widget icon-lg"></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Coding</h6>
+              <p class="subtitle">
+                C#, .NET MAUI, Java, HTML, CSS, Javascript, Bootstrap,
+                Express.js (for Node.js)
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i class="ti-paint-bucket icon-lg"></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Tools and Programs</h6>
+              <p class="subtitle">
+                Visual Studio Code, GitHub, Android Studio, Postman, MongoDB
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i class="ti-stats-up icon-lg"></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Others</h6>
+              <p class="subtitle">Illustrator, After Effects, Maya, Unity</p>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <section class="section" id="education">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Education</h2>
-            <div class="row">
-                <!-- Unused
+      <div class="container">
+        <h2 class="mb-5"><span class="text-danger">My</span> Education</h2>
+        <div class="row">
+          <!-- Unused
                     <div class="col-md-6 col-lg-4">
                     <div class="card">
                        <div class="card-header">
@@ -177,35 +263,52 @@
                     </div>
                     </div>
                  -->
-                <div>
-                    <div class="card">
-                       <div style="padding-left: 1.25rem;">
-                            <div class="mt-4">
-                                <h4>Bachelor's Degree</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2020 - Present</h6>
-                            <P>Thai-Nichi Institute of Technology | Faculty of Information Technology | Multimedia Technology</P>
-                            <hr style="margin-top: 2.5rem;">
-                        </div>
-                        <div style="padding-left: 1.25rem;">
-                            <div>
-                                <h4>High School Degree</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2017 - 2020</h6>
-                            <P>Bodindecha (Sing Singhaseni) 2 School | 10th Grade - 12th Grade | Science - Mathematics Program</P>
-                            <hr style="margin-left: 1.25rem; margin-top: 1.75rem; margin-right: 10rem;">
-                            <h6 style="margin-top: 1.75rem;" class="title text-danger">2014 - 2017</h6>
-                            <P>Bodindecha (Sing Singhaseni) 2 School | 7th Grade - 9th Grade | English Program</P>
-                        </div>
-                    </div>
+          <div>
+            <div class="card">
+              <div style="padding-left: 1.25rem">
+                <div class="mt-4">
+                  <h4>Bachelor's Degree</h4>
+                  <span class="line"></span>
                 </div>
-                <!-- Unused
+              </div>
+              <div class="card-body">
+                <h6 class="title text-danger">2020 - Present</h6>
+                <p>
+                  Thai-Nichi Institute of Technology | Faculty of Information
+                  Technology | Multimedia Technology
+                </p>
+                <hr style="margin-top: 2.5rem" />
+              </div>
+              <div style="padding-left: 1.25rem">
+                <div>
+                  <h4>High School Degree</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h6 class="title text-danger">2017 - 2020</h6>
+                <p>
+                  Bodindecha (Sing Singhaseni) 2 School | 10th Grade - 12th
+                  Grade | Science - Mathematics Program
+                </p>
+                <hr
+                  style="
+                    margin-left: 1.25rem;
+                    margin-top: 1.75rem;
+                    margin-right: 10rem;
+                  "
+                />
+                <h6 style="margin-top: 1.75rem" class="title text-danger">
+                  2014 - 2017
+                </h6>
+                <p>
+                  Bodindecha (Sing Singhaseni) 2 School | 7th Grade - 9th Grade
+                  | English Program
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Unused
                     <div class="col-lg-4">
                     <div class="card">
                        <div class="card-header">
@@ -265,8 +368,8 @@
                     </div>
                     </div>
                  -->
-            </div>
         </div>
+      </div>
     </section>
 
     <!-- Unused: Work EXP Stats
@@ -484,178 +587,282 @@
 
     <!-- Portfolio section -->
     <section class="section bg-custom-gray" id="portfolio">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
-            <!-- TODO: Edit & Update -->
-            <div class="portfolio">
-                <div class="filters">
-                    <a href="#" data-filter=".featured" class="active">
-                        Featured
-                    </a>
-                    <a href="#" data-filter=".app">
-                        Application
-                    </a>
-                    <a href="#" data-filter=".web">
-                        Website
-                    </a>
-                    <a href="#" data-filter=".API">
-                        API
-                    </a>
-                    <a href="#" data-filter=".others">
-                        Others
-                    </a>
+      <div class="container">
+        <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+        <!-- TODO: Edit & Update -->
+        <div class="portfolio">
+          <div class="filters">
+            <a href="#" data-filter=".featured" class="active"> Featured </a>
+            <a href="#" data-filter=".app"> Application </a>
+            <a href="#" data-filter=".web"> Website </a>
+            <a href="#" data-filter=".API"> API </a>
+          </div>
+          <div class="portfolio-container">
+            <div class="col-md-6 col-lg-4 featured app ">
+              <div class="portfolio-item">
+                <img
+                  src="assets/imgs/web-1.jpg"
+                  class="img-fluid"
+                  alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
+                />
+                <div class="content-holder">
+                  <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                  <div class="text-holder">
+                    <h6 class="title">TipCalculator</h6>
+                    <p class="subtitle">
+                      A sample collection of calculator app featuring .NET MAUI
+                      framework.
+                    </p>
+                  </div>
                 </div>
-                <div class="portfolio-container">
-                    <div class="col-md-6 col-lg-4 featured app">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">TipCalculator</h6>
-                                    <p class="subtitle">A sample collection of calculator app featuring .NET MAUI framework.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 featured app">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">TipCalculator (Altenative)</h6>
-                                    <p class="subtitle">An alternative version of sample calculator app build with Android Studio.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 featured web">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">Sample UI Homepage</h6>
-                                    <p class="subtitle">A simple website homepage UI create with HTML, CSS, and Bootstrap framework.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 web API">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">API</h6>
-                                    <p class="subtitle">A simple wine shop RESTful API with JWT authentication for different authorization level.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 advertising">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">Game</h6>
-                                    <p class="subtitle">A 3D farming simulator-like game build with Unity Engine.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="col-md-6 col-lg-4 featured app">
+              <div class="portfolio-item">
+                <img
+                  src="assets/imgs/web-2.jpg"
+                  class="img-fluid"
+                  alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
+                />
+                <div class="content-holder">
+                  <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
+                  <div class="text-holder">
+                    <h6 class="title">TipCalculator (Altenative)</h6>
+                    <p class="subtitle">
+                      An alternative version of sample calculator app build with
+                      Android Studio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 featured web">
+              <div class="portfolio-item">
+                <img
+                  src="assets/imgs/advertising-2.jpg"
+                  class="img-fluid"
+                  alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
+                />
+                <div class="content-holder">
+                  <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
+                  <div class="text-holder">
+                    <h6 class="title">Sample UI Homepage</h6>
+                    <p class="subtitle">
+                      A simple website homepage UI create with HTML, CSS, and
+                      Bootstrap framework.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 web API">
+              <div class="portfolio-item">
+                <img
+                  src="assets/imgs/web-4.jpg"
+                  class="img-fluid"
+                  alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
+                />
+                <div class="content-holder">
+                  <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
+                  <div class="text-holder">
+                    <h6 class="title">API</h6>
+                    <p class="subtitle">
+                      A simple wine shop RESTful API with JWT authentication for
+                      different authorization level.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 advertising">
+              <div class="portfolio-item">
+                <img
+                  src="assets/imgs/advertising-1.jpg"
+                  class="img-fluid"
+                  alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates"
+                />
+                <div class="content-holder">
+                  <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
+                  <div class="text-holder">
+                    <h6 class="title">Game</h6>
+                    <p class="subtitle">
+                      A 3D farming simulator-like game build with Unity Engine.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- End of portfolio section -->
 
     <!-- Game Jam Award -->
     <section class="section" id="activity">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Activities</h2>
-            <div class="row">
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Global Game Jam 2023</h6>
-
-                        <p class="post-details">
-                            <b style="color: #0c356a;">3 Febuary 2023 - 5 Feburary 2023</b>
-                        </p>
-                        
-                        <p>
-                            <i class="fa fa-trophy" style="font-size: 1.05rem; width: 1.5rem;" aria-hidden="true"></i><b> Popular Vote Game Award</b>
-                            <br>
-                            <i class="fa fa-map-marker" style="font-size: 1.25rem; width: 1.5rem;" aria-hidden="true"></i><b> ANT x Dhurakij Pundit University</b>
-                        </p>
-                        <p>Game Jam is an annual event where participants try to make a game from scratch in limited time. Every year, Game Jam does have it own theme with various diversifiers (required rules or restrictions for the game) which are announced right before the contest begin.</p>
-                        <p>Our team decided to come up with a unique idea. With some manipulation and improvisation, we finally create a game "SampleScene.Root."</p>
-
-                        <a href="https://globalgamejam.org/2023/games/samplesceneroots-8" class="read-more">View Jam Site <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-                <!-- Teacher Assistant Activity -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Teacher Assistant</h6>
-
-                        <p class="post-details">
-                            <b style="color: #0c356a;">June 2023 - Current</b>
-                        </p>
-
-                        <p>
-                            <i class="fa fa-arrow-circle-right" style="width: 1rem;" aria-hidden="true"></i>Guide juniors in basic C# and basic game development using Unity Engine lessons during classes.
-                            <br>
-                            <i class="fa fa-arrow-circle-right" style="width: 1rem;" aria-hidden="true"></i>Assist teacher in supervising the exam.
-                        </p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div>
-                <!-- end of blog wrapper -->
-                <!-- WMC Staff Activity -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h4 class="title">WMC Room Supervisor</h4>
-                        <p class="post-details">
-                            <b style="color: #0c356a;">June 2023 - Current</b>
-                        </p>
-                        <p>
-                            <b>Web Design and Multimedia Contest Staff</b>
-                            <br>
-                            <i class="fa fa-arrow-circle-right" style="width: 1rem;" aria-hidden="true"></i>Prepare and test the equipments before the competition day.
-                            <br>
-                            <i class="fa fa-arrow-circle-right" style="width: 1rem;" aria-hidden="true"></i>Provide technical supports to participants during the contest.
-                        </p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div>
-                <!-- end of blog wrapper -->
-
+      <div class="container">
+        <h2 class="mb-5"><span class="text-danger">My</span> Activities</h2>
+        <div class="row">
+          <div class="blog-card">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/blog1.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
             </div>
+            <div class="content-holder">
+              <h6 class="title">Global Game Jam 2023</h6>
+
+              <p class="post-details">
+                <b style="color: #0c356a">3 Febuary 2023 - 5 Feburary 2023</b>
+              </p>
+
+              <p>
+                <i
+                  class="fa fa-trophy"
+                  style="font-size: 1.05rem; width: 1.5rem"
+                  aria-hidden="true"
+                ></i
+                ><b> Popular Vote Game Award</b>
+                <br />
+                <i
+                  class="fa fa-map-marker"
+                  style="font-size: 1.25rem; width: 1.5rem"
+                  aria-hidden="true"
+                ></i
+                ><b> ANT x Dhurakij Pundit University</b>
+              </p>
+              <p>
+                Game Jam is an annual event where participants try to make a
+                game from scratch in limited time. Every year, Game Jam does
+                have it own theme with various diversifiers (required rules or
+                restrictions for the game) which are announced right before the
+                contest begin.
+              </p>
+              <p>
+                Our team decided to come up with a unique idea. With some
+                manipulation and improvisation, we finally create a game
+                "SampleScene.Root."
+              </p>
+
+              <a
+                href="https://globalgamejam.org/2023/games/samplesceneroots-8"
+                class="read-more"
+                >View Jam Site <i class="ti-angle-double-right"></i
+              ></a>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+          <!-- Teacher Assistant Activity -->
+          <div class="blog-card">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/blog2.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h6 class="title">Teacher Assistant</h6>
+              <p class="post-details">
+                <b style="color: #0c356a">June 2023 - Current</b>
+              </p>
+              <p>
+                <i
+                  class="fa fa-map-marker"
+                  style="font-size: 1.25rem; width: 1rem"
+                  aria-hidden="true"
+                ></i
+                ><b> Thai-Nichi Institute of Technology</b>
+              </p>
+
+              <p>
+                <i
+                  class="fa fa-arrow-circle-right"
+                  style="width: 1rem"
+                  aria-hidden="true"
+                ></i
+                >Guide juniors in basic C# and basic game development using
+                Unity Engine lessons during classes.
+                <br />
+                <i
+                  class="fa fa-arrow-circle-right"
+                  style="width: 1rem"
+                  aria-hidden="true"
+                ></i
+                >Assist teacher in supervising the exam.
+              </p>
+
+              <a href="#" class="read-more"
+                >Read more <i class="ti-angle-double-right"></i
+              ></a>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
+          <!-- WMC Staff Activity -->
+          <div class="blog-card">
+            <div class="img-holder">
+              <img
+                src="assets/imgs/blog3.jpg"
+                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              />
+            </div>
+            <div class="content-holder">
+              <h4 class="title">WMC Room Supervisor</h4>
+              <p class="post-details">
+                <b style="color: #0c356a">17 August 2023 - 18 August 2023</b>
+              </p>
+              <p>
+                <i
+                  class="fa fa-map-marker"
+                  style="font-size: 1.25rem; width: 1rem"
+                  aria-hidden="true"
+                ></i
+                ><b> Thai-Nichi Institute of Technology</b>
+              </p>
+
+              <p>
+                <b>Web Design and Multimedia Contest Staff</b>
+                <br />
+                <i
+                  class="fa fa-arrow-circle-right"
+                  style="width: 1rem"
+                  aria-hidden="true"
+                ></i
+                >Prepare and test the equipments before the competition day.
+                <br />
+                <i
+                  class="fa fa-arrow-circle-right"
+                  style="width: 1rem"
+                  aria-hidden="true"
+                ></i
+                >Provide technical supports to participants during the contest.
+              </p>
+
+              <a href="#" class="read-more"
+                >Read more <i class="ti-angle-double-right"></i
+              ></a>
+            </div>
+          </div>
+          <!-- end of blog wrapper -->
         </div>
+      </div>
     </section>
 
-    <div class="section contact" id="contact">
-        <div id="map" class="map"></div>
-        <div class="container">
-            <div class="row">
+    <div
+      class="section contact"
+      style="padding-bottom: 1.75rem; background-color: #0c356a"
+      id="contact"
+    >
+      <!-- Unused: Map
+            <div id="map" class="map"></div>
+         -->
+      <div class="container">
+        <div class="row">
+          <!-- Unused: Form
                 <div class="col-lg-8">
                     <div class="contact-form-card">
-                        <h4 class="contact-title">Send a message</h4>
+                    <h4 class="contact-title">Send a message</h4>
                         <form action="">
                             <div class="form-group">
                                 <input  class="form-control" type="text" placeholder="Name *" required>
@@ -672,55 +879,87 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
-                            </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (123) 456-789</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Address :<br> <span class="text-muted">12345 Fake ST NoWhere AB Country.</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">info@website.com</span></h6>
-                            </div>
-                        </div>
-                        <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+             -->
+          <!-- For layout purposes -->
+          <div class="col-lg-3"></div>
 
+          <div class="col-lg-6">
+            <div class="contact-info-card">
+              <h4 class="contact-title">Get in touch</h4>
+              <div class="row mb-2">
+                <div class="col-1 pt-1 mr-1">
+                  <i class="ti-mobile icon-md"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="d-inline">
+                    Phone : <br />
+                    <span class="text-muted">+ (66) 4814-4676</span>
+                  </h6>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-1 pt-1 mr-1">
+                  <i class="ti-map-alt icon-md"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="d-inline">
+                    Address :<br />
+                    <span class="text-muted"
+                      >70/128, 01 Kanchanaphisek 7 alley,
+              Khannayao District, Bangkok 10230</span
+                    >
+                  </h6>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-1 pt-1 mr-1">
+                  <i class="ti-envelope icon-md"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="d-inline">
+                    Email :<br />
+                    <span class="text-muted">vi.chollasit_st@tni.ac.th</span>
+                  </h6>
+                </div>
+              </div>
+              <ul class="social-icons pt-3">
+            <li class="social-item">
+              <a
+                class="social-link text-dark"
+                href="https://web.facebook.com/profile.php?id=100008299267075"
+                ><i class="ti-facebook" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link text-dark" href="https://github.com/chollasit-dev"
+                ><i class="ti-github" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <a href="http://devcrud.com" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">DevCRUD</span></a>
-            </p>
-        </div>
+      <div class="container">
+        <p class="small mb-0 text-light">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Created By
+          <a href="https://github.com/chollasit-dev" target="_blank"
+            ><span
+              style="color: #f85c70"
+              title="Bootstrap 4 Themes and Dashboards"
+              ><b>chollasit-dev</b></span
+            >
+        </p>
+      </div>
     </footer>
 
-	<!-- core  -->
+    <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
@@ -731,20 +970,27 @@
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
     <!-- Google mpas -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"
+    ></script>
 
     <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
-
-</body>
+  </body>
 </html>
 
 <!-- Manually added scripts -->
 <script>
-    function downloadFileResume() {
-        window.open("https://drive.google.com/file/d/1Qd7rD_mE-vSSwfXVqk4S_HhX1TgBhPmV/view?usp=drive_link");
-    }
-    function downloadFileTranscript() {
-        window.open("https://drive.google.com/file/d/1AWpaNapEfsn5JbS4_m9WwvwBDgmQw64s/view?usp=drive_link");
-    }
+  function downloadFileResume() {
+    window.open(
+      "https://drive.google.com/file/d/1Qd7rD_mE-vSSwfXVqk4S_HhX1TgBhPmV/view?usp=drive_link"
+    );
+  }
+  function downloadFileTranscript() {
+    window.open(
+      "https://drive.google.com/file/d/1AWpaNapEfsn5JbS4_m9WwvwBDgmQw64s/view?usp=drive_link"
+    );
+  }
 </script>
